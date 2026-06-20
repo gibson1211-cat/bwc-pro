@@ -10,7 +10,7 @@ body {
     padding: 0;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     background: var(--dark);
-    color: #e0e0e0;
+    color: #e5e5e5;
     line-height: 1.6;
 }
 
@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-links a {
-    color: #ccc;
+    color: #d1d5db;
     text-decoration: none;
     margin-left: 2rem;
     font-weight: 500;
@@ -74,14 +74,8 @@ nav {
 
 .tagline {
     font-size: 1.5rem;
-    color: #aaa;
+    color: #e5e5e5;
     margin: 0;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    color: #888;
-    margin: 1rem 0 2rem;
 }
 
 /* Buttons */
@@ -127,16 +121,15 @@ h2 {
     border: 1px solid #222;
 }
 
+.card p {
+    color: #d1d5db;
+}
+
 /* Footer */
 footer {
     background: #111;
     padding: 3rem 0;
     text-align: center;
-    color: #666;
+    color: #aaa;
     margin-top: 4rem;
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: #ccc;
 }

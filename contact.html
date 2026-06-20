@@ -24,25 +24,61 @@
         <h1>Get In Touch</h1>
         
         <div class="section">
-            <h2>Direct Contact</h2>
-            <p><strong>Email:</strong> <a href="mailto:mike@bwcpro.com">mike@bwcpro.com</a></p>
-            <p>We typically respond within 24 hours.</p>
+            <h2>Send a Message</h2>
+            <p style="max-width: 600px; color: #ccc; margin-bottom: 2rem;">
+                Interested in renting GPU time or have questions about the hardware? 
+                Fill out the form below and I’ll get back to you within 24 hours.
+            </p>
+
+            <!-- 
+                TODO: Replace with your real Formspree endpoint after signing up at formspree.io
+                Example: https://formspree.io/f/xxxxxxxx
+            -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+                <div style="display: grid; gap: 1.25rem; max-width: 600px;">
+                    
+                    <div>
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; color: #d1d5db;">Name</label>
+                        <input type="text" id="name" name="name" required 
+                               style="width: 100%; padding: 12px; background: #111; border: 1px solid #333; border-radius: 8px; color: #e5e5e5; font-size: 1rem;">
+                    </div>
+
+                    <div>
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; color: #d1d5db;">Email Address</label>
+                        <input type="email" id="email" name="email" required 
+                               style="width: 100%; padding: 12px; background: #111; border: 1px solid #333; border-radius: 8px; color: #e5e5e5; font-size: 1rem;">
+                    </div>
+
+                    <div>
+                        <label for="workload" style="display: block; margin-bottom: 0.5rem; color: #d1d5db;">What are you planning to use it for?</label>
+                        <input type="text" id="workload" name="workload" placeholder="AI training, rendering, development, etc."
+                               style="width: 100%; padding: 12px; background: #111; border: 1px solid #333; border-radius: 8px; color: #e5e5e5; font-size: 1rem;">
+                    </div>
+
+                    <div>
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; color: #d1d5db;">Message</label>
+                        <textarea id="message" name="message" rows="6" required
+                                  style="width: 100%; padding: 12px; background: #111; border: 1px solid #333; border-radius: 8px; color: #e5e5e5; font-size: 1rem; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="justify-self: start; padding: 14px 40px; border: none; cursor: pointer;">
+                        Send Message
+                    </button>
+                </div>
+            </form>
         </div>
 
         <div class="section">
-            <h2>What to Include</h2>
-            <ul>
-                <li>Your use case (AI training, rendering, development, etc.)</li>
-                <li>Preferred GPU count / configuration</li>
-                <li>Expected duration or rental period</li>
-                <li>Any specific requirements</li>
-            </ul>
+            <h2>Direct Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:mike@bwcpro.com" style="color: #00ff9f;">mike@bwcpro.com</a></p>
+            <p style="color: #ccc;">I typically respond within 24 hours.</p>
         </div>
     </div>
 
     <footer>
         <div class="container">
             <p><strong>Bored Walk Creations LLC</strong> • BWC Pro</p>
+            <p>Atlantic City, New Jersey</p>
         </div>
     </footer>
 </body>

@@ -40,8 +40,8 @@
         <div class="section">
             <h2>Send a Message</h2>
             <p style="max-width: 600px; color: #ccc; margin-bottom: 2rem;">
-                Interested in renting GPU time or have questions about the hardware? 
-                Fill out the form below and I’ll get back to you within 24 hours.
+                Interested in renting dual RTX 5080, dual RTX PRO 6000 Max-Q, or dual RTX PRO 6000 Workstation time? 
+                Fill out the form below with your workload and I’ll get back to you within 24 hours.
             </p>
 
             <!-- Success Message (hidden by default) -->
@@ -107,7 +107,6 @@
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // Disable button during submission
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
 
@@ -123,11 +122,9 @@
                 });
 
                 if (response.ok) {
-                    // Success - hide form and show thank you message
                     form.style.display = 'none';
                     successMessage.style.display = 'block';
                 } else {
-                    // Error handling
                     alert('Oops! There was a problem submitting your form. Please try again or email me directly.');
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Send Message';
